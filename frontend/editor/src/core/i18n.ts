@@ -29,7 +29,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "en-US",
+    fallbackLng: "vi-VN",
     supportedLngs: Object.keys(supportedLanguages),
     load: "currentOnly",
     nonExplicitSupportedLngs: false,
@@ -57,9 +57,10 @@ i18n
       order: ["localStorage", "navigator", "htmlTag"],
       caches: [], // Don't cache auto-detected language - only cache when user manually selects
       convertDetectedLanguage: (lng: string) => {
-        // Map bare en to en-US
         const normalized = normalizeLanguageCode(lng);
-        return normalized === "en" ? "en-US" : normalized;
+        if (normalized === "en") return "en-US";
+        if (normalized === "vi") return "vi-VN";
+        return normalized;
       },
     },
 
@@ -180,13 +181,15 @@ export function updateSupportedLanguages(
     return;
   }
 
-  // Determine fallback: prefer validDefault if in the list, then en-US, then first valid language
+  // Determine fallback: prefer validDefault if in the list, then vi-VN, then en-US, then first valid language
   const fallback =
     validDefault && validLanguages.includes(validDefault)
       ? validDefault
-      : validLanguages.includes("en-US")
-        ? "en-US"
-        : validLanguages[0];
+      : validLanguages.includes("vi-VN")
+        ? "vi-VN"
+        : validLanguages.includes("en-US")
+          ? "en-US"
+          : validLanguages[0];
 
   i18n.options.supportedLngs = validLanguages;
   i18n.options.fallbackLng = fallback;

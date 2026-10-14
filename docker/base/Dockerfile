@@ -414,7 +414,7 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
       # Python runtime & UNO bridge
       python3 python3-uno python3-packaging \
       # OCR
-      tesseract-ocr tesseract-ocr-eng tesseract-ocr-deu tesseract-ocr-fra \
+      tesseract-ocr tesseract-ocr-eng tesseract-ocr-vie tesseract-ocr-deu tesseract-ocr-fra \
       tesseract-ocr-por tesseract-ocr-chi-sim \
       # Tesseract OSD for orientation detection
       tesseract-ocr-osd \

@@ -19,7 +19,7 @@ services:
     environment:
       DISABLE_ADDITIONAL_FEATURES: "true"
       SECURITY_ENABLELOGIN: "false"
-      SYSTEM_DEFAULTLOCALE: en-US
+      SYSTEM_DEFAULTLOCALE: vi-VN
       UI_APPNAME: Stirling-PDF
       UI_HOMEDESCRIPTION: Demo site for Stirling-PDF Latest
       UI_APPNAMENAVBAR: Stirling-PDF Latest
