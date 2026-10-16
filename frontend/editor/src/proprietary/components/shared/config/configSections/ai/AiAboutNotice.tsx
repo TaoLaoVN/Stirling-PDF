@@ -23,14 +23,14 @@ export function AiAboutNotice({ cloud = false }: { cloud?: boolean }) {
         color="blue"
         title={t(
           "admin.settings.ai.general.cloudNote.title",
-          "About Stirling Cloud AI",
+          "About MaPDF Cloud AI",
         )}
         icon={<Icon name="info" size="1rem" />}
       >
         <Text size="xs">
           {t(
             "admin.settings.ai.general.cloudNote.body",
-            "The reasoning runs on Stirling's infrastructure, billed to the account this server is linked to. There is no container to run and no provider key to hold here. Whatever the AI reads is processed by Stirling Cloud rather than on your own hardware.",
+            "The reasoning runs on MaPDF's infrastructure, billed to the account this server is linked to. There is no container to run and no provider key to hold here. Whatever the AI reads is processed by MaPDF Cloud rather than on your own hardware.",
           )}
         </Text>
       </Alert>

@@ -34,9 +34,9 @@ export function useChecklistSetupItem(
     item: {
       id: STEP_DOWNLOAD_DESKTOP,
       titleKey: "onboarding.checklist.downloadDesktop.title",
-      titleFallback: "Download Stirling for Desktop",
+      titleFallback: "Download MaPDF for Desktop",
       descriptionKey: "onboarding.checklist.downloadDesktop.description",
-      descriptionFallback: "Run Stirling natively on your machine",
+      descriptionFallback: "Run MaPDF natively on your machine",
       onClick: () => setOpen(true),
     },
     dialog: (

@@ -367,7 +367,7 @@ public class SecurityConfiguration {
                                             })
                                     .permitAll()
                                     .anyRequest()
-                                    .authenticated());
+                                    .permitAll());
             // Handle User/Password Logins
             if (securityProperties.isUserPass()) {
                 // v2: Authentication is handled via API (/api/v1/auth/login), not form login

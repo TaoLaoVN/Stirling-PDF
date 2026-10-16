@@ -90,7 +90,7 @@ function appendMcpSection(
     label: t("config.mcp.navLabel", "MCP Server"),
     description: t(
       "config.mcp.description",
-      "Model Context Protocol (MCP) lets AI assistants like Claude use your Stirling PDF tools directly. Connect a client once and your assistant can convert, edit, secure and process documents on your behalf.",
+      "Model Context Protocol (MCP) lets AI assistants like Claude use your MaPDF tools directly. Connect a client once and your assistant can convert, edit, secure and process documents on your behalf.",
     ),
     icon: "bot",
     component: <McpSection />,

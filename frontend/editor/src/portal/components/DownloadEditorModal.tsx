@@ -11,23 +11,23 @@ import "@portal/components/DownloadEditorModal.css";
 /*  Install commands + guides (code isn't translated; only labels are)       */
 /* ──────────────────────────────────────────────────────────────────────── */
 
-const WINGET = "winget install StirlingTools.StirlingPDF";
-const BREW = "brew install --cask stirling-pdf";
+const WINGET = "winget install MaPDF";
+const BREW = "brew install --cask mapdf";
 const dockerCmd = (tag: string) =>
-  `docker run -d --name stirling-pdf -p 8080:8080 \\\n  -v ./stirling-data:/configs \\\n  stirlingtools/stirling-pdf:${tag}`;
-const HELM = `helm repo add stirling-pdf https://stirling-tools.github.io/Stirling-PDF/
+  `docker run -d --name mapdf -p 8080:8080 \\\n  -v ./mapdf-data:/configs \\\n  mapdf/mapdf:${tag}`;
+const HELM = `helm repo add mapdf https://mapdf.github.io/MaPDF/
 helm repo update
-helm install stirling-pdf stirling-pdf/stirling-pdf-chart \\\n  --namespace stirling-pdf --create-namespace`;
-const JAR_URL = "https://files.stirlingpdf.com/Stirling-PDF-with-login.jar";
+helm install mapdf mapdf/mapdf-chart \\\n  --namespace mapdf --create-namespace`;
+const JAR_URL = "";
 const JAR =
-  "java -Xmx2g -jar Stirling-PDF-with-login.jar\n# then open http://localhost:8080";
+  "java -Xmx2g -jar MaPDF.jar\n# then open http://localhost:8080";
 
 const GUIDES = {
-  windows: "https://docs.stirlingpdf.com/Installation/Windows%20Installation/",
-  mac: "https://docs.stirlingpdf.com/Installation/Mac%20Installation/",
+  windows: "",
+  mac: "",
   linux: DOWNLOAD_URLS.LINUX_DOCS,
-  docker: "https://docs.stirlingpdf.com/Installation/Docker%20Install",
-  kubernetes: "https://docs.stirlingpdf.com/Installation/Kubernetes",
+  docker: "",
+  kubernetes: "",
   manual: DOWNLOAD_URLS.LINUX_DOCS,
 } as const;
 

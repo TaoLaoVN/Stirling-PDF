@@ -136,7 +136,7 @@ export function FileDetailsActions({
                   disabled={saveToServerDisabled}
                   onClick={() => onSaveToServer?.(localOnlyFiles)}
                 >
-                  {t("filesPage.addToLibrary", "Add to Stirling library…")}
+                  {t("filesPage.addToLibrary", "Add to MaPDF library…")}
                 </Menu.Item>
               </Tooltip>
             )}

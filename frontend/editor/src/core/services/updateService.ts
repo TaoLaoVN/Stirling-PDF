@@ -82,8 +82,8 @@ export class UpdateService {
       return (
         DOWNLOAD_BASE_URL +
         (machineInfo.activeSecurity
-          ? "Stirling-PDF-with-login.jar"
-          : "Stirling-PDF.jar")
+          ? "MaPDF-with-login.jar"
+          : "MaPDF.jar")
       );
     }
 
@@ -185,7 +185,7 @@ export class UpdateService {
    */
   async getCurrentVersionFromGitHub(): Promise<string> {
     const url =
-      "https://raw.githubusercontent.com/Stirling-Tools/Stirling-PDF/release/build.gradle";
+      "https://raw.githubusercontent.com/Stirling-Tools/MaPDF/release/build.gradle";
 
     try {
       const response = await fetch(url);

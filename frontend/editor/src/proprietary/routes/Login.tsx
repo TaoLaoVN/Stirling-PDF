@@ -391,12 +391,12 @@ export default function Login() {
 
   // Set document meta
   useDocumentMeta({
-    title: `${t("login.title", "Sign in")} - Stirling PDF`,
+    title: `${t("login.title", "Sign in")} - MaPDF`,
     description: t(
       "app.description",
       "A free, private PDF editor you can run on any infrastructure.",
     ),
-    ogTitle: `${t("login.title", "Sign in")} - Stirling PDF`,
+    ogTitle: `${t("login.title", "Sign in")} - MaPDF`,
     ogDescription: t(
       "app.description",
       "A free, private PDF editor you can run on any infrastructure.",
@@ -437,12 +437,12 @@ export default function Login() {
         <div className="auth-logo-block">
           <img
             src={loginHeader}
-            alt="Stirling PDF"
+            alt="MaPDF"
             className="auth-logo-header auth-logo-header--light"
           />
           <img
             src={withBasePath("/modern-logo/LoginDarkModeHeader.svg")}
-            alt="Stirling PDF"
+            alt="MaPDF"
             className="auth-logo-header auth-logo-header--dark"
           />
         </div>

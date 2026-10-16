@@ -58,7 +58,7 @@ export async function createServerPlanCheckoutSession(
   const token = await getAccessToken();
   if (!request.requiresSeats && !token) {
     throw new Error(
-      "Sign in to the Stirling account you want to buy Team for, then try again.",
+      "Sign in to the MaPDF account you want to buy Team for, then try again.",
     );
   }
 

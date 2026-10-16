@@ -263,7 +263,7 @@ export const ServerSelection: React.FC<ServerSelectionProps> = ({
           error={testError}
           description={t(
             "setup.server.url.description",
-            "Enter the full URL of your self-hosted Stirling PDF server",
+            "Enter the full URL of your self-hosted MaPDF server",
           )}
         />
 

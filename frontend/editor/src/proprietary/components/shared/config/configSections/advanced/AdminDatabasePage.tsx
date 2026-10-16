@@ -125,7 +125,7 @@ export default function AdminDatabasePage() {
           title={t("admin.settings.database.connection", "Connection")}
           description={t(
             "admin.settings.database.connectionDescription",
-            "Point Stirling at an external database instead of the embedded one.",
+            "Point MaPDF at an external database instead of the embedded one.",
           )}
           badge={<TierBadge tier="PRO" />}
         >

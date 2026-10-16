@@ -171,7 +171,7 @@ export function ConnectApproveView({
           : pending?.canApprove
             ? t(
                 "connect.confirm.lead",
-                "A Stirling server is asking to connect to your team. Check the address below is yours before you approve.",
+                "A MaPDF server is asking to connect to your team. Check the address below is yours before you approve.",
               )
             : t(
                 "connect.confirm.cannotDecide",

@@ -47,7 +47,7 @@ export default function LoginHeader({
           <Logo
             variant="iconOnly"
             iconHeight="2rem"
-            alt="Stirling PDF"
+            alt="MaPDF"
             style={{ flexShrink: 0 }}
           />
           {title && (

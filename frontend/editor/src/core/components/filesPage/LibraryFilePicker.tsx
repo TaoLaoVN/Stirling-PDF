@@ -557,7 +557,7 @@ export function LibraryFilePicker({
         <div>
           <h2>
             {destination
-              ? t("filesPage.addToLibrary", "Add to Stirling library…")
+              ? t("filesPage.addToLibrary", "Add to MaPDF library…")
               : t("filePicker.title", "Add files")}
           </h2>
           <Text size="sm" c="dimmed">

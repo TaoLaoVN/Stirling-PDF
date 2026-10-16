@@ -7,7 +7,7 @@ import { useLoginRequired } from "@app/hooks/useLoginRequired";
 import type { GeneralCardProps } from "@app/components/shared/config/configSections/server/serverCardProps";
 
 /**
- * The certificate behind "Sign with Stirling-PDF". This was the whole Features
+ * The certificate behind "Sign with MaPDF". This was the whole Features
  * row: one hook whose key said "features" while it read and wrote the system
  * section, so it rides the general draft now.
  */
@@ -30,7 +30,7 @@ export function ServerCertificateCard({
           )}
           info={t(
             "admin.settings.features.serverCertificate.enabled.description",
-            'Offer "Sign with Stirling-PDF" using a certificate this server generates',
+            'Offer "Sign with MaPDF" using a certificate this server generates',
           )}
           pending={isFieldPending("serverCertificate.enabled")}
           checked={settings.serverCertificate?.enabled ?? true}
@@ -70,7 +70,7 @@ export function ServerCertificateCard({
               </Group>
             }
             value={
-              settings.serverCertificate?.organizationName || "Stirling PDF Inc"
+              settings.serverCertificate?.organizationName || "MaPDF Inc"
             }
             onChange={(e) =>
               setSettings({
@@ -81,7 +81,7 @@ export function ServerCertificateCard({
                 },
               })
             }
-            placeholder="Stirling-PDF"
+            placeholder="MaPDF"
             disabled={!loginEnabled}
           />
         </div>

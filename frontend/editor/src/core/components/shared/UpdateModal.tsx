@@ -105,7 +105,7 @@ function formatSize(bytes: number | null | undefined): string {
 type DesktopInstall = NonNullable<UpdateModalProps["desktopInstall"]>;
 type MigrationGuide = NonNullable<UpdateSummary["migration_guides"]>[number];
 
-const RELEASES_URL = "https://github.com/Stirling-Tools/Stirling-PDF/releases";
+const RELEASES_URL = "";
 
 // Show max 10 initially to keep the modal manageable
 const INITIAL_VERSION_COUNT = 10;
@@ -176,7 +176,7 @@ function UpdateModalHeader({ canClose, onClose }: UpdateModalHeaderProps) {
             <Text size="sm" c="dimmed" mt={2}>
               {t(
                 "update.modalSubtitle",
-                "A new version of Stirling-PDF is ready to install.",
+                "A new version of MaPDF is ready to install.",
               )}
             </Text>
           </Box>
@@ -344,7 +344,7 @@ function InstallBlockedAlert({ show }: { show: boolean }) {
       <Text size="sm">
         {t(
           "desktopUpdate.blocked.message",
-          "Stirling-PDF does not have permission to update itself on this machine.",
+          "MaPDF does not have permission to update itself on this machine.",
         )}{" "}
         <Anchor
           href={WINDOWS_INSTALL_DOCS_URL}

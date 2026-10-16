@@ -31,7 +31,7 @@ export default function FreeEditorSlide(): SlideConfig {
   const title = (
     <Trans
       i18nKey="onboarding.saas.freeEditor.title"
-      defaults="Welcome to Stirling"
+      defaults="Welcome to MaPDF"
     />
   );
 

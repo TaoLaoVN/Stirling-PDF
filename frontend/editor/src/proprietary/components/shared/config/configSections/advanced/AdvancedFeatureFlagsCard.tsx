@@ -86,11 +86,11 @@ export function AdvancedFeatureFlagsCard({
         <SettingsToggleRow
           label={t(
             "admin.settings.advanced.stirlingOfficeConversion.label",
-            "Use new Stirling Office conversion",
+            "Use new MaPDF Office conversion",
           )}
           info={t(
             "admin.settings.advanced.stirlingOfficeConversion.description",
-            "Stirling Office Convert is in beta. It offers better conversions, faster and with less memory than LibreOffice.",
+            "MaPDF Office Convert is in beta. It offers better conversions, faster and with less memory than LibreOffice.",
           )}
           pending={isFieldPending("stirlingOfficeConversion")}
           checked={settings.stirlingOfficeConversion || false}

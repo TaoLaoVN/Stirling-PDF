@@ -525,7 +525,7 @@ export function QuoteBuilder({
             <div className="portal-surface portal-qb__paper">
               <div className="portal-qb__paper-head">
                 <div>
-                  <div className="portal-qb__paper-brand">Stirling PDF</div>
+                  <div className="portal-qb__paper-brand">MaPDF</div>
                   <div className="portal-qb__paper-eyebrow">
                     {t("portal.procurement.builder.paperEyebrow")}
                   </div>

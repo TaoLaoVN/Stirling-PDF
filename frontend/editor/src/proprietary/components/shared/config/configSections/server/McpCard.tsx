@@ -119,7 +119,7 @@ export function McpCard({
               <Text size="xs">
                 {t(
                   "admin.settings.mcp.apikeyNote",
-                  "Clients send a Stirling API key in the X-API-KEY header (or Authorization: Bearer <key>). The key maps to its owning Stirling user - only provisioned accounts get in, and actions are audited as that user. Manage keys under Account → API Keys.",
+                  "Clients send a MaPDF API key in the X-API-KEY header (or Authorization: Bearer <key>). The key maps to its owning MaPDF user - only provisioned accounts get in, and actions are audited as that user. Manage keys under Account → API Keys.",
                 )}
               </Text>
             </Alert>
@@ -267,7 +267,7 @@ export function McpCard({
                     <InfoTooltip
                       label={t(
                         "admin.settings.mcp.requireAccount.description",
-                        "Only let tokens through if their subject maps to a provisioned, enabled Stirling user.",
+                        "Only let tokens through if their subject maps to a provisioned, enabled MaPDF user.",
                       )}
                     />
                   </Text>
@@ -299,7 +299,7 @@ export function McpCard({
                     <InfoTooltip
                       label={t(
                         "admin.settings.mcp.usernameClaim.description",
-                        "JWT claim matched against a Stirling username (e.g. sub, email, preferred_username).",
+                        "JWT claim matched against a MaPDF username (e.g. sub, email, preferred_username).",
                       )}
                     />
                   </Group>
@@ -457,7 +457,7 @@ export function McpCard({
                 )
               : t(
                   "admin.settings.mcp.guide.tipApiKey",
-                  "Tip: API-key mode needs no external IdP - simplest for self-host. The key maps to its owning Stirling user.",
+                  "Tip: API-key mode needs no external IdP - simplest for self-host. The key maps to its owning MaPDF user.",
                 )}
           </Text>
         </Stack>

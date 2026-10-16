@@ -129,7 +129,7 @@ function McpGuestNotice({ onGoToAccount }: { onGoToAccount: () => void }) {
           <Text size="sm" c="dimmed" style={{ flex: 1 }}>
             {t(
               "config.mcp.guestInfo",
-              "Guest users can't connect MCP clients. Create an account to use the MCP server and let your AI assistant run Stirling PDF tools on your behalf.",
+              "Guest users can't connect MCP clients. Create an account to use the MCP server and let your AI assistant run MaPDF tools on your behalf.",
             )}
           </Text>
           <Button
@@ -232,7 +232,7 @@ function McpUsageTip() {
         <Text size="sm">
           {t(
             "config.mcp.tip",
-            "Every action your assistant runs is performed as your account and counts towards your usage, just like using the Stirling PDF API and Automation.",
+            "Every action your assistant runs is performed as your account and counts towards your usage, just like using the MaPDF API and Automation.",
           )}
         </Text>
         <Button

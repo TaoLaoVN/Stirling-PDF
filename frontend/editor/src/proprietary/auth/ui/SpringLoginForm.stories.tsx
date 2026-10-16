@@ -41,7 +41,7 @@ const meta = {
   args: {
     state: mockState(),
     logoSrc: loginHeader,
-    logoAlt: "Stirling PDF",
+    logoAlt: "MaPDF",
   },
 } satisfies Meta<typeof SpringLoginForm>;
 

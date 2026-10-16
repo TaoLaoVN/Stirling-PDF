@@ -1,0 +1,150 @@
+/* MaPDF Custom Theme - Blue, auto dark/light */
+
+:root {
+  --mapdf-primary: #2563eb;
+  --mapdf-primary-hover: #1d4ed8;
+  --mapdf-primary-light: #dbeafe;
+  --mapdf-accent: #60a5fa;
+  --mapdf-text: #1a1a2e;
+  --mapdf-bg: #f8faff;
+  --mapdf-card-bg: #ffffff;
+  --mapdf-border: #bfdbfe;
+  --mapdf-navbar-bg: #1e3a8a;
+  --mapdf-navbar-text: #ffffff;
+  --mapdf-footer-bg: #1e3a8a;
+  --mapdf-shadow: 0 2px 12px rgba(37, 99, 235, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mapdf-primary: #3b82f6;
+    --mapdf-primary-hover: #60a5fa;
+    --mapdf-primary-light: #1e3a8a;
+    --mapdf-accent: #93c5fd;
+    --mapdf-text: #e2e8f0;
+    --mapdf-bg: #0f172a;
+    --mapdf-card-bg: #1e293b;
+    --mapdf-border: #1e40af;
+    --mapdf-navbar-bg: #0f172a;
+    --mapdf-navbar-text: #e2e8f0;
+    --mapdf-footer-bg: #0f172a;
+    --mapdf-shadow: 0 2px 12px rgba(59, 130, 246, 0.15);
+  }
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--mapdf-navbar-bg) !important;
+  box-shadow: var(--mapdf-shadow);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .navbar-text {
+  color: var(--mapdf-navbar-text) !important;
+}
+
+.navbar .nav-link:hover {
+  color: var(--mapdf-accent) !important;
+}
+
+/* Primary buttons */
+.btn-primary {
+  background-color: var(--mapdf-primary) !important;
+  border-color: var(--mapdf-primary) !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--mapdf-primary-hover) !important;
+  border-color: var(--mapdf-primary-hover) !important;
+}
+
+.btn-outline-primary {
+  color: var(--mapdf-primary) !important;
+  border-color: var(--mapdf-primary) !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--mapdf-primary) !important;
+  color: #ffffff !important;
+}
+
+/* Cards */
+.card {
+  background-color: var(--mapdf-card-bg) !important;
+  border-color: var(--mapdf-border) !important;
+  box-shadow: var(--mapdf-shadow);
+  border-radius: 12px !important;
+}
+
+/* Body & background */
+body {
+  background-color: var(--mapdf-bg) !important;
+  color: var(--mapdf-text) !important;
+}
+
+/* Links */
+a {
+  color: var(--mapdf-primary) !important;
+}
+
+a:hover {
+  color: var(--mapdf-primary-hover) !important;
+}
+
+/* Form controls */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--mapdf-primary) !important;
+  box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25) !important;
+}
+
+/* Footer */
+footer, #footer {
+  background-color: var(--mapdf-footer-bg) !important;
+  color: var(--mapdf-navbar-text) !important;
+}
+
+footer a, #footer a {
+  color: var(--mapdf-accent) !important;
+}
+
+/* Tool cards on home page */
+.feature-card, .tool-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover, .tool-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.18) !important;
+}
+
+/* Headings accent */
+h1, h2, h3 {
+  color: var(--mapdf-text);
+}
+
+/* Badge / highlight */
+.badge.bg-primary {
+  background-color: var(--mapdf-primary) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--mapdf-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mapdf-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mapdf-primary-hover);
+}

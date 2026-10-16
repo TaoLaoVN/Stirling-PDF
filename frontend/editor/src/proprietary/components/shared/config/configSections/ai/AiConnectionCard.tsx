@@ -108,7 +108,7 @@ function ModeOption({
  *
  * Was a bare "Enable AI" switch above four always-visible fields, which gave the URL and timeouts
  * equal billing with the decision that makes them relevant. As a mode choice the engine fields sit
- * under the option that owns them, and Stirling Cloud stays visible but disabled until the server
+ * under the option that owns them, and MaPDF Cloud stays visible but disabled until the server
  * is linked.
  *
  * Every key here is restart-required.
@@ -358,11 +358,11 @@ export function AiConnectionCard({
           icon="cloud"
           title={t(
             "admin.settings.ai.general.mode.cloud.title",
-            "Use Stirling Cloud AI",
+            "Use MaPDF Cloud AI",
           )}
           description={t(
             "admin.settings.ai.general.mode.cloud.description",
-            "No container, no provider key, no model choice - the work runs on Stirling Cloud and is billed to the account this server is linked to.",
+            "No container, no provider key, no model choice - the work runs on MaPDF Cloud and is billed to the account this server is linked to.",
           )}
           badge={
             linked === false ? (
@@ -385,7 +385,7 @@ export function AiConnectionCard({
               >
                 {t(
                   "admin.settings.ai.general.mode.cloud.linkCta",
-                  "Connect this server to a Stirling account",
+                  "Connect this server to a MaPDF account",
                 )}{" "}
                 &rsaquo;
               </Anchor>
@@ -393,7 +393,7 @@ export function AiConnectionCard({
               <Text size="sm" c="dimmed">
                 {t(
                   "admin.settings.ai.general.mode.cloud.ownerOnly",
-                  "Only the organization owner can link this server to a Stirling account.",
+                  "Only the organization owner can link this server to a MaPDF account.",
                 )}
               </Text>
             ) : null
@@ -406,13 +406,13 @@ export function AiConnectionCard({
                   <Text fw={500} size="sm">
                     {t(
                       "admin.settings.ai.general.cloud.indexing.label",
-                      "Let Stirling Cloud keep indexed documents",
+                      "Let MaPDF Cloud keep indexed documents",
                     )}
                   </Text>
                   <InfoTooltip
                     label={t(
                       "admin.settings.ai.general.cloud.indexing.description",
-                      "Every AI tool sends the page text it needs to answer. This decides whether Stirling Cloud may also keep that text, indexed, so later questions can search across the document.",
+                      "Every AI tool sends the page text it needs to answer. This decides whether MaPDF Cloud may also keep that text, indexed, so later questions can search across the document.",
                     )}
                   />
                 </Group>
@@ -433,14 +433,14 @@ export function AiConnectionCard({
                 }
                 aria-label={t(
                   "admin.settings.ai.general.cloud.indexing.label",
-                  "Let Stirling Cloud keep indexed documents",
+                  "Let MaPDF Cloud keep indexed documents",
                 )}
               />
             </Group>
             <Text size="xs" c="dimmed">
               {t(
                 "admin.settings.ai.general.cloud.note",
-                "Models and provider keys are managed by Stirling Cloud, so those settings do not apply in this mode.",
+                "Models and provider keys are managed by MaPDF Cloud, so those settings do not apply in this mode.",
               )}
             </Text>
           </Stack>

@@ -320,3 +320,6 @@ docs/type3/signatures/
 frontend/editor/screenshots/
 frontend/editor/src-tauri/libs/.variant
 release-desktop/
+
+# Local secrets — never commit
+**/application-local.properties

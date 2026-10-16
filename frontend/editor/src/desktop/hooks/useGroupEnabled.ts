@@ -9,7 +9,7 @@ import type { GroupEnabledResult } from "@app/types/groupEnabled";
 import { useLocalProcessingOnly } from "@app/hooks/useLocalProcessingOnly";
 
 const OFFLINE_REASON_FALLBACK =
-  "Requires your Stirling-PDF server (currently offline)";
+  "Requires your MaPDF server (currently offline)";
 
 // A boolean, not the monitor's state object — that is reassigned every poll.
 const subscribeToMonitor = (onChange: () => void) =>

@@ -38,8 +38,8 @@ export default function Footer({
   const { showCookiePreferences } = useCookieConsent();
 
   // Default URLs
-  const defaultTermsUrl = "https://www.stirling.com/terms";
-  const defaultPrivacyUrl = "https://www.stirling.com/privacy";
+  const defaultTermsUrl = "";
+  const defaultPrivacyUrl = "";
 
   // Use provided URLs or fall back to defaults
   const finalTermsUrl = finalTermsAndConditions || defaultTermsUrl;
@@ -83,22 +83,6 @@ export default function Footer({
           href={finalTermsUrl}
         >
           {t("legal.terms", "Terms and Conditions")}
-        </a>
-        <a
-          className="footer-link px-3"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://discord.gg/Cn8pWhQRxZ"
-        >
-          {t("footer.discord", "Discord")}
-        </a>
-        <a
-          className="footer-link px-3"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/Stirling-Tools/Stirling-PDF"
-        >
-          {t("footer.issues", "GitHub")}
         </a>
         {isValidLink(finalAccessibilityStatement) && (
           <a
